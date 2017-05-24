@@ -9,8 +9,6 @@
 
 module.exports = function (grunt) {
 
-  exports = function (grunt) {
-
     grunt.loadNpmTasks(‘grunt-build-control’);      ///\<---INSERT HERE
     var pkg = require('./package.json');          ///\<---INSERT HERE
 
@@ -431,7 +429,7 @@ module.exports = function (grunt) {
      },
      pages: {
        options: {
-         remote: 'git@github.com:InspoDiary.git',
+         remote: 'git@github.com:tracyyu/InspoDiary.git',
          branch: 'gh-pages'
        }
      },
