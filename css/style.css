@@ -1,0 +1,820 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+div { display: block;}
+
+h1 { 
+	font-family: 'Pacifico', cursive; 
+	font-size: 100px;
+	color: white;
+	text-shadow: 2px 2px 4px #444;
+	padding-bottom: 45px;
+}
+
+h2 { 
+	font-family: 'Abril Fatface', cursive; 
+	font-size: 50px; 
+	color: white;
+	text-shadow: 2px 2px 4px #444;
+	padding-top: 5px;
+}
+
+hr {
+	margin: 0 auto;
+	padding: 0 auto;
+	color: white;
+	background-color: white;
+	box-shadow: 2px 2px 4px #444;
+	height: 3px;
+	width: 250px;
+}
+
+nav {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+}
+
+.nav li {
+	border-bottom: 1px solid white;
+}
+
+.container {
+	padding: 0;
+	margin: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.home-active{
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	background-image: url('../images/photo/cdm.jpg');
+	background-size: cover;
+	padding: 0 auto;
+	margin: 0 auto;
+}
+
+.container .row {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.container form {
+	opacity: 1;
+}
+
+.navbar-form {
+	width: 100%;
+	text-align: right;
+ 	opacity: 0.88;
+ 	padding: 0 auto;
+ 	margin: 0 auto;
+}
+
+.form-control {
+	opacity: 0.88;
+}
+
+.col-sm-2 .footer {
+	margin-top: 280px; 
+	text-align: center;
+	color: #777;
+}
+
+.col-sm-2 .footer img {
+	width: 24px;
+	height: 24px;
+}
+
+.title {
+	margin-top: 120px;
+	text-align: center;
+}
+
+.login {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.login button {
+	width: 250px;
+	height: 50px;
+	margin: 10px;
+	text-align: center;
+	margin: 6px auto;
+	padding: 6px auto;
+
+	display: block;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+.show--button {
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	margin: 0 auto;
+	padding: 0 auto;
+	bottom: 0;
+	text-align: center;
+	background: none;
+}
+
+/* Button */
+.button {
+	margin: 0 auto;
+	padding: 0 auto;
+ 	border: none;
+  	background: none;
+}
+
+.button--view:hover,
+.button--view:focus {
+  outline: none;
+  fill: #03a9f4;
+}
+
+.footer-nav {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: 30px;
+	background-color: darkgrey;
+	color: #777;
+}
+
+.footer-nav {
+	list-style: none;
+	text-align: center;
+}
+
+.footer-nav li {
+	float: left;
+}
+
+.footer p {
+	margin-top: 7px;
+}
+
+@media (min-width: 900px) {
+	.col-sm-2 {
+	width: 16.66%;
+	margin: 0;
+		padding: 0;
+	}
+
+	.col-sm-10 {
+		width: 83.34%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.navbar-collapse {
+		text-align: center;
+	height: auto;
+	border-top: 0;
+	box-shadow: none;
+	max-height: none;
+	padding-left:0;
+	padding-right:0;
+	}
+	.navbar-collapse.collapse {
+	display: block !important;
+	width: auto !important;
+	padding-bottom: 0;
+	overflow: visible !important;
+	}
+	.navbar-collapse.in {
+	overflow-x: visible;
+	}
+
+	.navbar
+	{	
+	max-width:300px;
+	height: 100%;
+	margin-right: 0;
+	margin-left: 0;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	}	
+
+	.navbar-nav,
+	.navbar-nav > li,
+	.navbar-left,
+	.navbar-right,
+	.navbar-header
+	{float:none !important;}
+
+	.navbar-right .dropdown-menu {left:0;right:auto;}
+	.navbar-collapse .navbar-nav.navbar-right:last-child {
+	margin-right: 0;
+	}
+
+	.navbar-form {
+ 	float: right!important;
+ 	padding-right: 10px;
+ 	padding-top: 10px;
+	}
+}
+
+@media (min-width: 768px) {
+	.col-sm-2 {
+    	height: 100%;
+    	margin: 0 auto;
+    	padding: 0 auto;
+    	padding-right: 0;
+	}
+
+	.col-sm-10 {
+		margin: 0;
+		padding: 0;
+	}
+	.container {
+	    width: 100%;
+	}
+	.navbar { margin: 0;}
+
+}
+
+@media (max-width: 768px ) {
+	.col-sm-2 .footer {
+		margin-top: 0;
+		opacity: 0;
+	}
+
+	.form-control {
+		width: 80%;
+		display: inline;
+		float: left;
+	}
+
+	.btn {
+		display: inline-block;
+	}
+}
+
+/*************************
+
+	GENERAL PAGE
+
+*************************/
+
+.title-about {
+	color: white;
+	width: 650px;
+}
+
+.title-about h2 {
+	font-family: 'Pacifico', cursive;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.title-about .description {
+	width: 650px;
+	font-size: 16px;
+	margin-top: 15px;
+	text-align: center;
+}
+
+/*************************
+
+	ABOUT PAGE
+
+*************************/
+
+.about-active {
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	background-color: #acd9eb;
+	background-size: cover;
+	padding: 0 auto;
+	margin: 0 auto;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1.6s;
+    -moz-animation-duration:1.6s;
+    animation-duration:1.6s;
+
+    -webkit-animation-delay: 1s;
+	-moz-animation-delay:1s;
+	animation-delay: 1s;
+}
+
+
+g .a{
+	max-width: 18%;
+	width: auto;
+	height: auto;
+}
+
+g .b{
+	max-width: 15%;
+	width: auto;
+	height: auto;
+}
+
+g .c{
+	max-width: 13%;
+	width: auto;
+	height: auto;
+}
+
+
+.about-active .image-diagram {
+	width: 400px;
+	height: 400px;
+	margin: auto;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	left: 34%;
+
+		  /* This timing applies on the way IN */
+	  transition-timing-function: ease-out;
+
+	  /* Move into place */
+	  transform: translateY(20);
+
+	  /* A litttttle slower on the way in */
+	  transition: opacity 0.2s ease-out, transform 0.2s;
+}
+
+.about-active .image-diagram:hover{
+	transform: scale(1.1);
+}
+
+.about-active .title-about {
+	margin: auto;
+	padding-top: 20px;
+}
+
+/*************************
+
+	EXPLORE PAGE
+
+*************************/
+
+.explore-active {
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	background-color: #36465d;
+	background-size: cover;
+	padding: 0 auto;
+	margin: 0 auto;
+	display: table;
+}
+
+.explore-active .navbar-form {
+	position: absolute;
+	right: 0;
+}
+
+.explore-active .row {
+	height: 100%;
+	display: table-cell;
+ 	vertical-align: middle;
+}
+
+.explore-active .map-diagram {
+	float: left;
+	margin: 0 50px 0 50px;
+}
+
+.explore-active #map {
+	width: 550px;
+	height: 400px;
+	margin: auto;
+	border-radius: 3px;
+}
+
+.explore-active .title-about {
+	float: left;
+ 	vertical-align: middle;
+ 	width: 35%;
+ 	height: 250px;
+ 	margin: 90px 30px 0 30px;
+}
+
+.explore-active .title-about p {
+	width: 100%;
+}
+
+
+/*************************
+
+	DISCOVER PAGE
+
+*************************/
+
+.discover-active {
+	height: 100%;
+	width: 1260px;
+	top: 0;
+	bottom: 0;
+	background-color: #f0b4b4;
+	background-size: cover;
+	padding: 0 auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.discover-active .title-about {
+	position: relative;
+	width: 520px;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+.discover-active .title-about h2 {
+	text-align: left;
+	font-size: 42px;
+}
+
+.discover-active .title-about .description {
+	text-align: left;
+	font-size: 100%;
+	width: 450px;
+}
+
+.blogs-post-column:nth-child(1), .blogs-post:nth-child(1) {
+    transition-delay: .08s;
+}
+
+.blogs-post .blogs-post-column {
+	opacity: 1;
+	-webkit-transform: translateX(100px);
+    transform: translateX(100px);
+}
+
+.blog-diagram {
+	padding-left: 30px;
+}
+
+.blogs-post-column {
+	opacity: 1;
+	float: left;
+	margin-top: 25px;
+	margin-right: 20px;
+	width: 225px;
+}
+
+.blogs-post {
+	background: #fff;
+    border-radius: 3px;
+    margin: 0 0 20px;
+    opacity: 1;
+    width: 225px;
+
+}
+
+ .blogs-post .post-image {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.post-bottom, .blogs-post .post-top {
+    height: 35px;
+    padding: 10px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/*************************
+
+	CONNECT PAGE
+
+*************************/
+
+.connect-active {
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	background-color: #894E8C;
+	background-size: cover;
+	padding: 0 auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.connect-active .title-about {
+	text-align: center;
+	margin: auto;
+	padding-top: 20px;
+}
+
+.profile-connect {
+	vertical-align: middle;
+	opacity: 1;
+	margin: auto;
+	width: 800px;
+	height: 400px;
+}
+
+.profile-connect .profile, .icon {
+	float: left;
+}
+
+.profile-connect .icon {
+	width: 85px;
+	height: 85px;
+	vertical-align: middle;
+	margin: auto;
+}
+
+.animated {
+  -webkit-animation-duration: .7s;
+  animation-duration: .7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.lft {
+  -webkit-animation-name: leftBounce;
+  animation-name: leftBounce;
+  -webkit-animation-delay: 0.3s; /* Safari 4.0 - 8.0 */
+  animation-delay: 0.3s;
+}
+
+@-webkit-keyframes leftBounce {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-8px);
+  }
+}
+@keyframes leftBounce {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-8px);
+  }
+}
+
+.rgt {
+  -webkit-animation-name: rightBounce;
+  animation-name: rightBounce;
+}
+
+@-webkit-keyframes rightBounce {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-8px);
+  }
+}
+@keyframes rightBounce {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-8px);
+  }
+}
+
+.profile-connect .profile {
+	background: #fff;
+    border-radius: 5px;
+    opacity: 1;
+    width: 225px;
+    height: 300px;
+    margin: 55px 60px 55px 60px;
+}
+
+
+ .profile .profile-image {
+    display: block;
+    height: 290px;
+    width: 200px;
+    margin: auto;
+    margin-top: 5px;
+    overflow: hidden; 
+}
+
+.profile-image .post-image {
+	width: 200px;
+	height: 200px;
+	border: 5px solid lightgrey;
+    border-radius: 50%;
+}
+
+.post-bottom, .post-top {
+    height: 40px;
+    width: 225px;
+    box-sizing: border-box;
+    margin-left: -10px;
+}
+
+.profile-connect .icon {
+	margin-top: 130px;
+}
+
+.post-top p { 
+	float: left;
+	margin-top: 5px;
+	margin-left: 15px;
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+.btn-animate {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes follow {
+  0%, 100% {
+    background-color: #3399FF;
+    color: #ffffff;
+  }
+  20%, 40%, 60%, 80% {
+   background-color: #ffffff;
+   color: #3399FF;
+  }
+}
+@keyframes follow {
+  0%, 100% {
+    background-color: #3399FF;
+    color: #ffffff;
+  }
+  20%, 40%, 60%, 80%  {
+   background-color: #ffffff;
+   color: #3399FF;
+  }
+}
+
+.follow-btn {
+	position: relative;
+	float: right;
+	color: #ffffff;
+	font-size: 20px;
+	background-color: #3399FF;
+	border: 1px solid;
+	border-color: #3399FF;
+	border-radius: 3px;
+	padding: 1px 8px 1px 8px;
+	margin-top: 5px;
+	margin-right: 17px;
+	width: auto;
+	height: auto;
+
+  -webkit-animation-name: follow;
+  animation-name: follow;
+  -webkit-animation-delay: 0.3s; /* Safari 4.0 - 8.0 */
+  animation-delay: 0.3s;
+}
+
+.like { 
+	width: 40px;
+	height: 35px;
+	float: left;
+	margin-left: 5px;
+}
+
+.like-btn, .comment-btn { 
+	width: inherit;
+	height: inherit;
+	border: none;
+	background-color: transparent;
+}
+
+.like-btn:focus, .comment-btn:focus {outline:0;}
+
+
+.fa-heart-o {
+  position: relative;
+  top: 5px;
+  width: 35px;
+  color: red;
+  background-color: transparent;
+}
+
+.fa-heart { 
+	color: red;
+	margin-top: -25px;
+	margin-left: 6px;
+	opacity: 1;
+
+  -webkit-animation-name: like;
+  animation-name: like;
+  -webkit-animation-delay: 0.7s; /* Safari 4.0 - 8.0 */
+  animation-delay: 0.7s;
+}
+
+@-webkit-keyframes like {
+  0%, 100%{
+    opacity: 0;
+  }
+  20%, 60%{
+    opacity: 1;
+  }
+}
+@keyframes like {
+  0%, 100%{
+    opacity: 0;
+  }
+  20%, 60%{
+    opacity: 1;
+  }
+}
+
+.comment { 
+	width: 40px; 
+	height: 35px;
+	float: right;
+	margin-right: 8px;
+}
+
+.fa-comments-o {
+  position: relative;
+  top: 5px;
+  width: 35px;
+  color: darkgrey;
+}
+
+/*************************
+
+	CONNECT PAGE
+
+*************************/
+
+.signin-active {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	background:    
+    linear-gradient(
+      rgba(0, 0, 0, 0.35), 
+      rgba(0, 0, 0, 0.35)
+    ),
+    url("../images/photo/dtla.jpg") no-repeat;
+	background-size: cover;
+	display: table;
+	padding: 0 auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.signin-active .row {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.signin-active .title-about {
+	text-align: center;
+	margin: auto;
+	vertical-align: baseline;
+}
+
+.login button {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	width: 300px;
+	height: 40px;
+}
+
+.login-input {
+	width: 300px;
+	height: 40px;
+}
