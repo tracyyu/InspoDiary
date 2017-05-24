@@ -434,13 +434,6 @@ var pkg = require('./package.json');          ///\<---INSERT HERE
           branch: 'gh-pages'
         }
       },
-      heroku: {
-        options: {
-          remote: 'git@heroku.com:example-heroku-webapp-1988.git',
-          branch: 'master',
-          tag: pkg.version
-        }
-      },
       local: {
         options: {
           remote: '../',
