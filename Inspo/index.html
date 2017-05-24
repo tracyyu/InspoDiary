@@ -1,0 +1,87 @@
+<html ng-app="InspoScope">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Script Tutorials" />
+    <title>Responsive website using AngularJS | Script Tutorials</title>
+    <meta name="description" content="Responsive website using AngularJS - demo page">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!-- add styles -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Pacifico|Yellowtail" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+
+    		    <!-- add javascripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/map.js"></script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLmT3POcrUBYKLW7qrPY6NAmMmGogvNlM&callback=initMap">
+    </script>
+    	    <!-- add javascripts -->
+    <!--
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+-->
+</head>
+<body>
+	<div class="row">
+		<div class="col-sm-2">
+			<nav class="navbar navbar-default" role="navigation">
+			  <!-- Brand and toggle get grouped for better mobile display -->
+			  <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+			    <a class="navbar-brand" href="#">Brand</a>
+			  </div>
+
+			  <!-- Collect the nav links, forms, and other content for toggling -->
+			  <div class="collapse navbar-collapse navbar-ex1-collapse">
+			    <ul class="nav navbar-nav">
+			      <li><a href="#home">Home</a></li>
+			      <li><a href="#about">About</a></li>
+			      <li><a href="#explore">Explore</a></li>
+			      <li><a href="#discover">Discover</a></li>
+			      <li><a href="#connect">Connect</a></li>
+			      <li><a href="#signin">Sign In</a></li>
+			    </ul>
+			  </div><!-- /.navbar-collapse -->
+			  <div class="footer">
+			  	<div class="social-icon">
+			  		<a href=""><img src="images/twitter.png"></a>
+			  		<a href=""><img src="images/facebook.png"></a>
+			  		<a href=""><img src="images/instagram.png"></a>
+			  		<a href=""><img src="images/mail.png"></a>
+			  	</div>
+			  	<p>Copyright 2017 InspoScope</p>
+			  </div>
+			</nav>
+		</div>
+		<div class="col-sm-10">
+			<div class="container">
+				
+					<!-- templating, this is where content will be injected -->
+				<div ng-view></div>
+
+				<div class="row show--button">
+					<button class="button button--view" aria-label="Show me more">
+	                <svg width="100%" height="100%" viewBox="0 0 310 177" preserveAspectRatio="xMidYMid meet">
+	                <path fill="#FFFFFF" d="M159.875,174.481L306.945,27.41c2.93-2.929,2.93-7.678,0-10.606L292.803,2.661c-1.406-1.407-3.314-2.197-5.303-2.197c-1.989,0-3.896,0.79-5.303,2.197L154.572,130.287L26.946,2.661c-1.406-1.407-3.314-2.197-5.303-2.197c-1.989,0-3.897,0.79-5.303,2.197L2.197,16.804C0.733,18.269,0,20.188,0,22.107s0.732,3.839,2.197,5.303l147.071,147.071C152.197,177.411,156.945,177.411,159.875,174.481L159.875,174.481z" />
+	                </svg>
+	             	</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="js/routes.js"></script>
+</body>
+</html>
