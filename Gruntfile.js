@@ -9,8 +9,10 @@
 
 module.exports = function (grunt) {
 
-  grunt.loadNpmTasks(‘grunt-build-control’);      ///\<---INSERT HERE
-var pkg = require('./package.json');          ///\<---INSERT HERE
+  exports = function (grunt) {
+
+    grunt.loadNpmTasks(‘grunt-build-control’);      ///\<---INSERT HERE
+    var pkg = require('./package.json');          ///\<---INSERT HERE
 
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
@@ -420,27 +422,33 @@ var pkg = require('./package.json');          ///\<---INSERT HERE
       ]
     },
 
-
     buildcontrol: {
-      options: {
-        dir: 'dist',
-        commit: true,
-        push: true,
-        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
-      },
-      pages: {
-        options: {
-          remote: 'git@github.com:tracyyu/InspoDiary.git',
-          branch: 'gh-pages'
-        }
-      },
-      local: {
-        options: {
-          remote: '../',
-          branch: 'build'
-        }
-      }
-    }, ///\ Don't forget the comma here. The grunt buildcontrol pasted code stops here.
+     options: {
+       dir: 'dist',
+       commit: true,
+       push: true,
+       message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+     },
+     pages: {
+       options: {
+         remote: 'git@github.com:InspoDiary.git',
+         branch: 'gh-pages'
+       }
+     },
+     heroku: {
+       options: {
+         remote: 'git@heroku.com:example-heroku-webapp-1988.git',
+         branch: 'master',
+         tag: pkg.version
+       }
+     },
+     local: {
+       options: {
+         remote: '../',
+         branch: 'build'
+       }
+     }
+   }, ///\ Don't forget the comma here. The grunt buildcontrol pasted code stops here.
 
     // Test settings
     karma: {
